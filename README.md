@@ -1,45 +1,41 @@
 # stay-and-mental-health
-This project explores how the length of stay impacts the average mental health diagnostic scores of international students at a Japanese university.
-The analysis is based on a 2018 student survey that studied the connection between:
-* Depression (PHQ-9 test)
-* Social Connectedness (SCS test)
-* Anxiety and Stress (ASISS test)
 
-What This Project Explores 🔍
-* Do international students experience higher mental health risks than domestic students?
-* Does social connectedness reduce the risk of depression?
-* Does the length of stay affect mental health outcomes?
-
-Tech Stack 🛠️
+- ### Table of contents
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [What I learned](#what-i-learned)
+  - [Acknowledgment](#acknowledgment)
+  - [Author](#author)
+    
+### Overview
+Stay and Mental Health is a SQL-based project that explores how the length of stay affects the mental health diagnostic scores of international students at a Japanese university. The project uses PostgreSQL to analyze data from a 2018 survey and examines the relationship between stay duration and three key mental health indicators.
+### Features
+* Count the number of international students for each length of stay.
+* Calculate the average depression score (PHQ-9 test).
+* Calculate the average social connectedness score (SCS test).
+* Calculate the average acculturative stress score (ASISS test).
+* Sort results by the length of stay in descending order.
+### Technologies Used
 * PostgreSQL
-* SQL Queries
-* Data Aggregation
-* Grouping & Filtering
+* SQL
 
-Dataset Overview
-* inter_dom	= Student Type (Inter = International, Dom = Domestic)
-* stay =	Length of Stay (in months or years)
-* todep =	Depression Score (PHQ-9 Test)
-* tosc	= Social Connectedness Score (SCS Test)
-* toas	= Anxiety and Stress Score (ASISS Test)
   
-How I Solved It:
-1. Filtered the data to only international students.
-2. Grouped students by length of stay.
-3. Calculated:
-    * Total number of international students for each stay length.
-    * Average Depression Score (PHQ-9)
-    * Average Social Connectedness Score (SCS)
-    * Average Anxiety & Stress Score (ASISS)
-4. Rounded all average scores to two decimal places.
-5. Sorted the results in descending order by length of stay.
+### What I Learned
+Through this project, I gained valuable experience in:
+* Writing SQL queries for data aggregation and analysis.
+* Using GROUP BY to group data based on categories.
+* Filtering grouped data with the WHERE and HAVING clauses.
+* Rounding numerical results with the ROUND() function.
+* Applying COUNT() and AVG() aggregate functions.
+  
+### Acknowledgment
+* Data source from a Japanese international university survey (2018).
+* DataCamp for the project guide.
 
-Conclusion
-Based on this analysis:
-* International students with longer stays tend to have better social connectedness scores.
-* Higher social connectedness is linked to lower depression scores.
-* Anxiety and stress levels vary with the length of stay, but longer stays show lower average ASISS scores.
-
+### Author
+* GitHub - @thegirlcoderr
+* Twitter - @thegirlcoder
 
 
 
